@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  catalog-module:
+    image: vishwacloudlab/catalog-service
+    ports: 
+     - "80:80"
+  redis:
+    image: redis:alpine
+  Review-Module:
+    image: vishwacloudlab/review-service
+    ports:
+     - "90:90"
+  Order-Module:
+    image: vishwacloudlab/order-service
+    ports:
+     - "95:95"
