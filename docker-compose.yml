@@ -2,9 +2,9 @@ version: '3'
 
 services:
   catalog-module:
-    image: vishwacloudlab/catalog-service
+    image: thiruvalluvan74/catalog-service
     ports: 
-     - "80:80"
+     - "80:8000"
     deploy:
       resources:
         limits:
@@ -16,9 +16,9 @@ services:
   redis:
     image: redis:alpine
   Review-Module:
-    image: vishwacloudlab/review-service
+    image: thiruvalluvan74/review-structure
     ports:
-     - "90:90"
+     - "90:9000"
     deploy:
       resources:
         limits:
@@ -28,9 +28,9 @@ services:
           cpus: '0.0001'
           memory: 20M
   Order-Module:
-    image: vishwacloudlab/order-service
+    image: thiruvalluvan/order-service
     ports:
-     - "95:95"
+     - "95:9500"
     deploy:
       resources:
         limits:
