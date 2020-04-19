@@ -28,7 +28,7 @@ services:
           cpus: '0.0001'
           memory: 20M
   Order-Module:
-    image: thiruvalluvan/order-service
+    image: thiruvalluvan74/order-service
     ports:
      - "95:9500"
     deploy:
