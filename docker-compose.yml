@@ -30,7 +30,7 @@ services:
   Order-Module:
     image: thiruvalluvan74/order-service
     ports:
-     - "95:9500"
+     - "94:9500"
     deploy:
       resources:
         limits:
